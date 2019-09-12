@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop">8dp</dimen>
+    <dimen name="marginBottom">8dp</dimen>
+    <dimen name="marginLeft">8dp</dimen>
+    <dimen name="marginRight">8dp</dimen>
+    <dimen name="textSize">23sp</dimen>
+
+
+</resources>
