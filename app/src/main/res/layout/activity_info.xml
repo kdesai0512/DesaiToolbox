@@ -10,28 +10,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subjectQuestion"
+        android:textColor="@color/black"
         android:textSize="@dimen/textSize"
         android:gravity="center"
         />
 
     <CheckBox
+        android:id="@+id/science"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
         android:text="@string/science"
         android:textSize="@dimen/textSize"
+        android:checked="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.133" />
 
     <CheckBox
+        android:id="@+id/math"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
         android:text="@string/math"
+        android:checked="false"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,10 +44,12 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <CheckBox
+        android:id="@+id/history"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
         android:text="@string/history"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,15 +58,72 @@
         app:layout_constraintVertical_bias="0.2666" />
 
     <CheckBox
+        android:id="@+id/english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
         android:text="@string/english"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3333" />
+
+    <CheckBox
+        android:id="@+id/art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
+        android:text="@string/art"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3999" />
+
+    <CheckBox
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
+        android:text="@string/music"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4666" />
+
+    <CheckBox
+        android:id="@+id/comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
+        android:text="@string/comp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5333" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5999"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
