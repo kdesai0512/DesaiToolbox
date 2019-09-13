@@ -6,4 +6,5 @@
     <string name="math">Math</string>
     <string name="history">History</string>
     <string name="english">English</string>
+    <string name="subjectQuestion">What subjects do you have homework for?</string>
 </resources>
