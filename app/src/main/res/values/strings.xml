@@ -10,4 +10,16 @@
     <string name="art">Art</string>
     <string name="music">Music</string>
     <string name="subjectQuestion">What subjects do you have homework for?</string>
+    <string name="activitiesQuestion">How many activities do you have?</string>
+    <string name="hoursQuestion">How much time will it take for?</string>
+    <string name="fiveHours">5 hours</string>
+    <string name="fourHours">4 hours</string>
+    <string name="threeHours">3 hours</string>
+    <string name="twoHours">2 hours</string>
+    <string name="oneHour">1 hour</string>
+    <string name="oneActivity">one</string>
+    <string name="twoActivity">two</string>
+    <string name="threeActivity">three</string>
+    <string name="fourActivity">four</string>
+    <string name="fiveActivity">five</string>
 </resources>
