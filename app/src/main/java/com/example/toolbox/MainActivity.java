@@ -7,10 +7,17 @@ import android.content.Intent;
 import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Spinner spinner1;
+    Spinner spinner2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+
 
     public void begin(View v) {
 

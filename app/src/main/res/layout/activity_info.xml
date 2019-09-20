@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoActivity">
+    tools:context=".InfoActivity"
+
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <TextView
         android:id="@+id/textView5"
@@ -19,105 +29,103 @@
         android:id="@+id/science"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
+        android:onClick="onCheckboxClicked"
         android:text="@string/science"
         android:textSize="@dimen/textSize"
-        android:checked="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.047" />
 
     <CheckBox
         android:id="@+id/math"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
-        android:text="@string/math"
         android:checked="false"
+        android:onClick="onCheckbox2Clicked"
+        android:text="@string/math"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintTop_toBottomOf="@+id/science"
+        app:layout_constraintVertical_bias="0.019" />
 
     <CheckBox
         android:id="@+id/history"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
+        android:onClick="onCheckbox3Clicked"
         android:layout_marginBottom="@dimen/marginBottom"
-        android:checked="false"
         android:text="@string/history"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2666" />
+        app:layout_constraintTop_toBottomOf="@+id/math"
+        app:layout_constraintVertical_bias="0.025" />
 
     <CheckBox
         android:id="@+id/english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
+        android:onClick="onCheckbox4Clicked"
         android:layout_marginBottom="@dimen/marginBottom"
         android:checked="false"
         android:text="@string/english"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3333" />
+        app:layout_constraintTop_toBottomOf="@+id/history"
+        app:layout_constraintVertical_bias="0.027" />
 
     <CheckBox
         android:id="@+id/art"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
+        android:onClick="onCheckbox5Clicked"
         android:layout_marginBottom="@dimen/marginBottom"
         android:checked="false"
         android:text="@string/art"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3999" />
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        app:layout_constraintVertical_bias="0.023" />
 
     <CheckBox
         android:id="@+id/music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
+        android:onClick="onCheckbox6Clicked"
         android:layout_marginBottom="@dimen/marginBottom"
         android:checked="false"
         android:text="@string/music"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4666" />
+        app:layout_constraintTop_toBottomOf="@+id/art"
+        app:layout_constraintVertical_bias="0.031" />
 
     <CheckBox
         android:id="@+id/comp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
+        android:onClick="onCheckbox7Clicked"
         android:layout_marginBottom="@dimen/marginBottom"
         android:checked="false"
         android:text="@string/comp"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5333" />
+        app:layout_constraintTop_toBottomOf="@+id/music"
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
         android:gravity="center"
         android:text="@string/activitiesQuestion"
@@ -126,8 +134,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintTop_toBottomOf="@+id/comp"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
+        android:text="@string/oneActivity"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.061" />
 
     <RadioButton
         android:id="@+id/radioButton2"
@@ -135,28 +157,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
-        android:text="@string/oneActivity"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.09" />
-
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
-        android:layout_marginBottom="@dimen/marginBottom"
+        android:checked="false"
         android:text="@string/twoActivity"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
         app:layout_constraintVertical_bias="0.0"/>
 
     <RadioButton
-        android:id="@+id/radioButton5"
+        android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
@@ -165,11 +175,11 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
         app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
-        android:id="@+id/radioButton6"
+        android:id="@+id/radioButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
@@ -178,11 +188,12 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3"
         app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:layout_width="wrap_content"
+        android:id="@+id/radioButton5"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         android:layout_marginBottom="@dimen/marginBottom"
@@ -190,20 +201,48 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton6"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/vhappy_face"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/radioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="generate"
         android:text="Submit"
         android:textSize="@dimen/textSize"
-        android:onClick="generate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintTop_toBottomOf="@+id/switch2"
+        app:layout_constraintVertical_bias="1.5" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Terms and Conditions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toEndOf="@+id/radioButton5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.755" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

@@ -17,9 +17,9 @@
     <string name="threeHours">3 hours</string>
     <string name="twoHours">2 hours</string>
     <string name="oneHour">1 hour</string>
-    <string name="oneActivity">one</string>
-    <string name="twoActivity">two</string>
-    <string name="threeActivity">three</string>
-    <string name="fourActivity">four</string>
-    <string name="fiveActivity">five</string>
+    <string name="oneActivity">zero</string>
+    <string name="twoActivity">one</string>
+    <string name="threeActivity">two</string>
+    <string name="fourActivity">three</string>
+    <string name="fiveActivity">four</string>
 </resources>
